@@ -9,7 +9,7 @@ interface TrashBinLabelProps {
 
 const TrashBinLabel: React.FC<TrashBinLabelProps> = ({ classConfig, appConfig }) => {
   return (
-    <div className="w-[20cm] h-[10cm] bg-white p-5 flex flex-col items-center justify-between border-[5px] border-emerald-600 shadow-sm print:shadow-none print:border-emerald-700 break-inside-avoid mb-6 relative overflow-hidden mx-auto font-sans rounded-xl print:rounded-none">
+    <div className="w-[19cm] max-w-full h-[9.5cm] bg-white p-4 flex flex-col items-center justify-between border-[5px] border-emerald-600 shadow-sm print:shadow-none print:border-emerald-700 break-inside-avoid mb-6 print:mb-4 relative overflow-hidden mx-auto font-sans rounded-xl print:rounded-none box-border">
       {/* Logos & Header */}
       <div className="w-full flex justify-between items-center border-b-2 border-emerald-600/30 pb-2">
         <img 

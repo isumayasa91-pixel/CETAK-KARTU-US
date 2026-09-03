@@ -8,7 +8,7 @@ interface MapLabelProps {
 
 const MapLabel: React.FC<MapLabelProps> = ({ classConfig, appConfig }) => {
   return (
-    <div className="w-[14cm] h-[9cm] bg-white p-6 flex flex-col items-center justify-between border-[6px] border-double border-primary shadow-sm print:shadow-none print:border-primary break-inside-avoid mb-4 relative overflow-hidden mx-auto">
+    <div className="w-[14cm] max-w-full h-[9cm] bg-white p-5 flex flex-col items-center justify-between border-[6px] border-double border-primary shadow-sm print:shadow-none print:border-primary break-inside-avoid mb-4 print:mb-2 relative overflow-hidden mx-auto box-border">
       {/* Logos & Header (Compact) */}
       <div className="w-full flex justify-between items-center mb-4 border-b border-primary/30 pb-2">
         <img src={appConfig.logoLeft} alt="" className="w-12 h-12 object-contain" referrerPolicy="no-referrer" />

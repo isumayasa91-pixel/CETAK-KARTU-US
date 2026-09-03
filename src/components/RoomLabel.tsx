@@ -8,7 +8,7 @@ interface RoomLabelProps {
 
 const RoomLabel: React.FC<RoomLabelProps> = ({ classConfig, appConfig }) => {
   return (
-    <div className="w-full max-w-[19cm] h-[27.7cm] mx-auto bg-white p-12 flex flex-col items-center justify-between border-[12px] border-double border-primary shadow-sm print:shadow-none print:border-primary break-after-page mb-8 relative overflow-hidden print:overflow-visible print:m-0 print:w-[19cm] print:h-[27.7cm] print:scale-[0.92] print:origin-top print:pt-[1cm]">
+    <div className="w-full max-w-[19cm] h-[25cm] mx-auto bg-white p-8 flex flex-col items-center justify-between border-[12px] border-double border-primary shadow-sm print:shadow-none print:border-primary break-after-page mb-8 relative overflow-hidden print:overflow-visible print:m-0 print:w-[19cm] print:h-[26cm] print:scale-[0.95] print:origin-top print:pt-2 box-border">
       {/* Logos & Header */}
       <div className="w-full flex justify-between items-center mb-8">
         <img src={appConfig.logoLeft} alt="" className="w-24 h-24 object-contain" referrerPolicy="no-referrer" />

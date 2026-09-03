@@ -8,7 +8,7 @@ interface SupervisorLabelProps {
 
 const SupervisorLabel: React.FC<SupervisorLabelProps> = ({ classConfig, appConfig }) => {
   return (
-    <div className="w-[25.9cm] h-[5.9cm] bg-white px-8 py-3 flex flex-col items-center justify-between border-[2px] border-primary shadow-sm print:shadow-none print:border-black break-inside-avoid mb-6 relative overflow-hidden mx-auto font-sans">
+    <div className="w-full max-w-[25.9cm] print:max-w-[27cm] h-[5.8cm] bg-white px-6 py-2 flex flex-col items-center justify-between border-[2px] border-primary shadow-sm print:shadow-none print:border-black break-inside-avoid mb-6 print:mb-4 relative overflow-hidden mx-auto font-sans box-border">
       {/* Logos & Header (More compact for 5.9cm height) */}
       <div className="w-full flex justify-between items-center border-b border-primary/20 pb-1">
         <img src={appConfig.logoLeft} alt="" className="w-10 h-10 object-contain" referrerPolicy="no-referrer" />

@@ -9,7 +9,7 @@ interface CatfishLabelProps {
 
 const CatfishLabel: React.FC<CatfishLabelProps> = ({ classConfig, appConfig }) => {
   return (
-    <div className="w-[20cm] h-[10cm] bg-white p-5 flex flex-col items-center justify-between border-[5px] border-cyan-600 shadow-sm print:shadow-none print:border-cyan-700 break-inside-avoid mb-6 relative overflow-hidden mx-auto font-sans rounded-xl print:rounded-none">
+    <div className="w-[19cm] max-w-full h-[9.5cm] bg-white p-4 flex flex-col items-center justify-between border-[5px] border-cyan-600 shadow-sm print:shadow-none print:border-cyan-700 break-inside-avoid mb-6 print:mb-4 relative overflow-hidden mx-auto font-sans rounded-xl print:rounded-none box-border">
       {/* Logos & Header */}
       <div className="w-full flex justify-between items-center border-b-2 border-cyan-600/30 pb-2">
         <img 
@@ -60,9 +60,6 @@ const CatfishLabel: React.FC<CatfishLabelProps> = ({ classConfig, appConfig }) =
       <div className="w-full border-t-2 border-cyan-600/30 pt-1.5 flex justify-between items-center text-[9px] font-black uppercase text-cyan-900 tracking-wider">
         <span className="flex items-center gap-1">
           <Waves size={12} className="text-cyan-600" /> PROGRAM BUDIDAYA IKAN LELE
-        </span>
-        <span className="bg-cyan-100 text-cyan-900 px-3 py-0.5 rounded-full font-extrabold text-[8px]">
-          20 cm x 10 cm
         </span>
         <span>JAGA & MERAWAT BERSAMA 🐟</span>
       </div>

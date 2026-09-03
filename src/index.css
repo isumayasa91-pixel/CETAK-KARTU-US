@@ -15,30 +15,55 @@
 
 @layer base {
   @media print {
-    .no-print {
-      display: none !important;
+    *, *::before, *::after {
+      -webkit-print-color-adjust: exact !important;
+      print-color-adjust: exact !important;
+      box-sizing: border-box !important;
     }
-    body {
+
+    html, body {
       background: white !important;
       padding: 0 !important;
       margin: 0 !important;
+      width: 100% !important;
+      max-width: 100% !important;
+      overflow: visible !important;
     }
+
+    .no-print {
+      display: none !important;
+    }
+
     @page {
-      size: A4;
+      size: A4 portrait;
       margin: 0.5cm;
     }
+
     @page landscape-print {
       size: A4 landscape;
       margin: 0.5cm;
     }
+
     .print-landscape {
       page: landscape-print;
     }
+
     .print-grid {
       display: grid !important;
-      grid-template-columns: repeat(2, 8cm) !important;
-      gap: 0.5cm !important;
+      grid-template-columns: repeat(2, 8.5cm) !important;
+      gap: 0.4cm !important;
       justify-content: center !important;
+      width: 100% !important;
+    }
+
+    .break-inside-avoid, [class*="break-inside-avoid"] {
+      break-inside: avoid !important;
+      page-break-inside: avoid !important;
+    }
+
+    .break-after-page, [class*="break-after-page"] {
+      break-after: page !important;
+      page-break-after: always !important;
     }
   }
 }
