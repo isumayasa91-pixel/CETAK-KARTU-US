@@ -1,0 +1,6 @@
+{
+  "name": "SAT Participant Number Generator",
+  "description": "A tool to generate and print participant number cards for school exams (SAT), supporting multiple classes and customizable ranges.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}
