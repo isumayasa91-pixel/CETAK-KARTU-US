@@ -26,7 +26,7 @@ const CatfishLabel: React.FC<CatfishLabelProps> = ({ classConfig, appConfig }) =
             {appConfig.schoolName}
           </h2>
           <p className="text-[8px] font-bold text-cyan-800 uppercase tracking-widest leading-none mt-0.5">
-            {appConfig.activityName} • {appConfig.academicYear}
+            {appConfig.activityName} • {appConfig.academicYear.replace(/Tahun Pelajaran/i, 'Tahun Ajaran')}
           </p>
         </div>
         <img 

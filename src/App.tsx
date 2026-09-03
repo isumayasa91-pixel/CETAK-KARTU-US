@@ -26,7 +26,7 @@ export default function App() {
   const [config, setConfig] = useState<AppConfig>({
     schoolName: 'SMP NEGERI 3 KEDIRI',
     activityName: 'PENGELOLAAN SAMPAH BERBASIS SUMBER (PSBS)',
-    academicYear: 'Tahun Pelajaran 2026/2027',
+    academicYear: 'Tahun Ajaran 2026/2027',
     headerImg: 'https://i.imgur.com/GvJfOR3.jpeg',
     logoLeft: 'https://i.imgur.com/3gkzf9B.png',
     logoRight: 'https://i.imgur.com/qIiuWyK.png',

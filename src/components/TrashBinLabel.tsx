@@ -26,7 +26,7 @@ const TrashBinLabel: React.FC<TrashBinLabelProps> = ({ classConfig, appConfig })
             {appConfig.schoolName}
           </h2>
           <p className="text-[8px] font-bold text-emerald-700 uppercase tracking-widest leading-none mt-0.5">
-            {appConfig.activityName} • {appConfig.academicYear}
+            {appConfig.activityName} • {appConfig.academicYear.replace(/Tahun Pelajaran/i, 'Tahun Ajaran')}
           </p>
         </div>
         <img 
@@ -43,7 +43,7 @@ const TrashBinLabel: React.FC<TrashBinLabelProps> = ({ classConfig, appConfig })
         <div className="flex items-center gap-2 px-6 py-1.5 bg-emerald-600 text-white rounded-lg shadow-sm mb-2">
           <Trash2 size={20} className="text-amber-300" />
           <h2 className="text-xl font-black uppercase tracking-[0.25em]">
-            PERMENTASI POCARI
+            FERMENTASI POCARI
           </h2>
           <Sparkles size={18} className="text-amber-300" />
         </div>
