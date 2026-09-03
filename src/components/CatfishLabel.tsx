@@ -9,7 +9,7 @@ interface CatfishLabelProps {
 
 const CatfishLabel: React.FC<CatfishLabelProps> = ({ classConfig, appConfig }) => {
   return (
-    <div className="w-[19cm] max-w-full h-[9.5cm] bg-white p-4 flex flex-col items-center justify-between border-[5px] border-cyan-600 shadow-sm print:shadow-none print:border-cyan-700 break-inside-avoid mb-6 print:mb-4 relative overflow-hidden mx-auto font-sans rounded-xl print:rounded-none box-border">
+    <div className="w-[19cm] max-w-full h-[8.6cm] print:h-[8.6cm] bg-white p-3 flex flex-col items-center justify-between border-[4px] border-cyan-600 shadow-sm print:shadow-none print:border-cyan-700 break-inside-avoid mb-6 print:mb-[0.4cm] relative overflow-hidden mx-auto font-sans rounded-xl print:rounded-none box-border">
       {/* Background Catfish Image */}
       <img 
         src="/catfish_background.jpg" 
@@ -19,18 +19,18 @@ const CatfishLabel: React.FC<CatfishLabelProps> = ({ classConfig, appConfig }) =
       />
 
       {/* Logos & Header */}
-      <div className="w-full flex justify-between items-center border-b-2 border-cyan-600/30 pb-2 relative z-10 bg-white/60 backdrop-blur-[1px] rounded-t-md">
+      <div className="w-full flex justify-between items-center border-b-2 border-cyan-600/30 pb-1.5 relative z-10 bg-white/60 backdrop-blur-[1px] rounded-t-md">
         <img 
           src={appConfig.logoLeft} 
           alt="Logo Kiri" 
-          className="w-12 h-12 object-contain" 
+          className="w-10 h-10 object-contain" 
           referrerPolicy="no-referrer" 
         />
-        <div className="text-center flex-1 mx-3">
-          <h1 className="text-[9px] font-black uppercase tracking-widest text-cyan-900 leading-tight">
+        <div className="text-center flex-1 mx-2">
+          <h1 className="text-[8.5px] font-black uppercase tracking-widest text-cyan-900 leading-tight">
             {appConfig.govName || 'PEMERINTAH KABUPATEN TABANAN'}
           </h1>
-          <h2 className="text-xs font-black uppercase tracking-wider text-cyan-950 leading-tight">
+          <h2 className="text-[11px] font-black uppercase tracking-wider text-cyan-950 leading-tight">
             {appConfig.schoolName}
           </h2>
           <p className="text-[8px] font-bold text-cyan-800 uppercase tracking-widest leading-none mt-0.5">
@@ -40,32 +40,32 @@ const CatfishLabel: React.FC<CatfishLabelProps> = ({ classConfig, appConfig }) =
         <img 
           src={appConfig.logoRight} 
           alt="Logo Kanan" 
-          className="w-12 h-12 object-contain" 
+          className="w-10 h-10 object-contain" 
           referrerPolicy="no-referrer" 
         />
       </div>
 
       {/* Main Content Area */}
-      <div className="flex-1 flex flex-col items-center justify-center w-full my-1 relative z-10">
+      <div className="flex-1 flex flex-col items-center justify-center w-full my-0.5 relative z-10">
         {/* Banner Title */}
-        <div className="flex items-center gap-2 px-6 py-1.5 bg-cyan-700 text-white rounded-lg shadow-sm mb-2">
-          <Fish size={22} className="text-amber-300" />
-          <h2 className="text-xl font-black uppercase tracking-[0.2em]">
+        <div className="flex items-center gap-2 px-5 py-1 bg-cyan-700 text-white rounded-lg shadow-sm mb-1.5">
+          <Fish size={20} className="text-amber-300" />
+          <h2 className="text-lg font-black uppercase tracking-[0.2em]">
             BUDIDAYA IKAN LELE
           </h2>
-          <Sparkles size={18} className="text-amber-300" />
+          <Sparkles size={16} className="text-amber-300" />
         </div>
 
         {/* Class Name Highlight */}
         <div className="text-center">
-          <div className="text-4xl font-black text-slate-900 uppercase tracking-widest border-2 border-cyan-600 px-8 py-2 rounded-xl bg-cyan-50/90 shadow-inner inline-block backdrop-blur-xs">
+          <div className="text-3xl font-black text-slate-900 uppercase tracking-widest border-2 border-cyan-600 px-6 py-1 rounded-xl bg-cyan-50/90 shadow-inner inline-block backdrop-blur-xs">
             KELAS {classConfig.name}
           </div>
         </div>
       </div>
 
       {/* Footer Slogan */}
-      <div className="w-full border-t-2 border-cyan-600/30 pt-1.5 flex justify-between items-center text-[9px] font-black uppercase text-cyan-900 tracking-wider relative z-10 bg-white/60 backdrop-blur-[1px] rounded-b-md">
+      <div className="w-full border-t-2 border-cyan-600/30 pt-1 flex justify-between items-center text-[8.5px] font-black uppercase text-cyan-900 tracking-wider relative z-10 bg-white/60 backdrop-blur-[1px] rounded-b-md">
         <span className="flex items-center gap-1">
           <Waves size={12} className="text-cyan-600" /> PROGRAM BUDIDAYA IKAN LELE
         </span>

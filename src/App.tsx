@@ -431,6 +431,8 @@ export default function App() {
                 ? 'print:grid print:grid-cols-2 print:w-[17cm] print:mx-auto print-grid' 
                 : view === 'supervisor'
                 ? 'print:block print-landscape'
+                : (view === 'trash' || view === 'catfish')
+                ? 'print:block print-3-per-page'
                 : 'print:block'
             }`}>
               {view === 'cards' ? (
