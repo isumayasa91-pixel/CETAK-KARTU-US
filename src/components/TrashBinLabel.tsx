@@ -58,11 +58,8 @@ const TrashBinLabel: React.FC<TrashBinLabelProps> = ({ classConfig, appConfig })
 
       {/* Footer Slogan */}
       <div className="w-full border-t-2 border-emerald-600/30 pt-1.5 flex justify-between items-center text-[9px] font-black uppercase text-emerald-800 tracking-wider">
-        <span>🌱 JAGALAH KEBERSIHAN KELAS</span>
-        <span className="bg-emerald-100 text-emerald-900 px-3 py-0.5 rounded-full font-extrabold text-[8px]">
-          20 cm x 10 cm
-        </span>
-        <span>BUANG SAMPAH PADA TEMPATNYA ♻️</span>
+        <span>🌱 FERMENTASI SAMPAH ORGANIK</span>
+        <span>PRODUKSI PUPUK POCARI (POC) 🧪</span>
       </div>
 
       {/* Decorative Corner Elements */}
