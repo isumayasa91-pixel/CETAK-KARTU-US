@@ -39,13 +39,15 @@
       margin: 0.5cm;
     }
 
-    @page landscape-print {
-      size: A4 landscape;
-      margin: 0.5cm;
+    @page landscape-page {
+      size: 297mm 210mm; /* A4 Landscape */
+      margin: 0.4cm;
     }
 
     .print-landscape {
-      page: landscape-print;
+      page: landscape-page;
+      width: 100% !important;
+      display: block !important;
     }
 
     .print-grid {

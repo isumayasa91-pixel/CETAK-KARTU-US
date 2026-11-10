@@ -22,6 +22,8 @@ const DEFAULT_CLASSES = [
   'IXA', 'IXB', 'IXC', 'IXD', 'IXE'
 ];
 
+const ROMAN_NUMERALS = ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X', 'XI', 'XII', 'XIII', 'XIV', 'XV'];
+
 export default function App() {
   const [config, setConfig] = useState<AppConfig>({
     schoolName: 'SMP NEGERI 3 KEDIRI',
@@ -41,7 +43,7 @@ export default function App() {
       startNo: 1, 
       endNo: 32, 
       columns: 8,
-      roomName: `Ruang ${(index + 1).toString().padStart(2, '0')}`
+      roomName: `Ruang ${ROMAN_NUMERALS[index] || (index + 1)}`
     }))
   );
 

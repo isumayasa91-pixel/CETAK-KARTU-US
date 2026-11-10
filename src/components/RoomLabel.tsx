@@ -34,8 +34,8 @@ const RoomLabel: React.FC<RoomLabelProps> = ({ classConfig, appConfig }) => {
           </div>
           
           <div className="relative">
-            <span className="text-[18rem] font-black leading-none text-primary tracking-tighter tabular-nums drop-shadow-2xl">
-              {classConfig.roomName?.match(/\d+/)?.[0] || '00'}
+            <span className="text-[12rem] font-black leading-none text-primary tracking-tighter tabular-nums drop-shadow-2xl">
+              {classConfig.roomName ? classConfig.roomName.replace(/^Ruang\s*/i, '') : '00'}
             </span>
           </div>
           

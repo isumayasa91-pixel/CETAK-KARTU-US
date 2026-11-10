@@ -31,8 +31,8 @@ const MapLabel: React.FC<MapLabelProps> = ({ classConfig, appConfig }) => {
           </div>
           
           <div className="relative">
-            <span className="text-8xl font-black leading-none text-primary tracking-tighter tabular-nums drop-shadow-lg">
-              {classConfig.roomName?.match(/\d+/)?.[0] || '00'}
+            <span className="text-7xl font-black leading-none text-primary tracking-tighter tabular-nums drop-shadow-lg">
+              {classConfig.roomName ? classConfig.roomName.replace(/^Ruang\s*/i, '') : '00'}
             </span>
           </div>
           
