@@ -25,7 +25,7 @@ const DEFAULT_CLASSES = [
 export default function App() {
   const [config, setConfig] = useState<AppConfig>({
     schoolName: 'SMP NEGERI 3 KEDIRI',
-    activityName: 'PENGELOLAAN SAMPAH BERBASIS SUMBER (PSBS)',
+    activityName: 'ASESMEN SUMATIF AKHIR SEMESTER (ASAS)',
     academicYear: 'Tahun Ajaran 2026/2027',
     headerImg: 'https://i.imgur.com/GvJfOR3.jpeg',
     logoLeft: 'https://i.imgur.com/3gkzf9B.png',
@@ -36,28 +36,13 @@ export default function App() {
   });
 
   const [classConfigs, setClassConfigs] = useState<ClassConfig[]>(
-    DEFAULT_CLASSES.map((name, index) => {
-      let endNo = 32;
-      const cleanName = name.replace(/\s/g, '').toUpperCase();
-      
-      if (cleanName === 'VIID') {
-        endNo = 27;
-      } else if (cleanName === 'VIIE') {
-        endNo = 28;
-      } else if (['VIIIA', 'VIIIB'].includes(cleanName)) {
-        endNo = 31;
-      } else if (['VIIIC', 'VIIID', 'VIIIE'].includes(cleanName)) {
-        endNo = 30;
-      }
-      
-      return { 
-        name, 
-        startNo: 1, 
-        endNo, 
-        columns: 8,
-        roomName: `Ruang ${(index + 1).toString().padStart(2, '0')}`
-      };
-    })
+    DEFAULT_CLASSES.map((name, index) => ({ 
+      name, 
+      startNo: 1, 
+      endNo: 32, 
+      columns: 8,
+      roomName: `Ruang ${(index + 1).toString().padStart(2, '0')}`
+    }))
   );
 
   const [selectedClass, setSelectedClass] = useState<string | 'all'>('all');
@@ -107,7 +92,7 @@ export default function App() {
             <LayoutGrid className="text-accent w-6 h-6" />
           </div>
           <div>
-            <h1 className="text-lg font-black tracking-widest uppercase">SAT 2026 • GENERATOR NOMOR BANGKU</h1>
+            <h1 className="text-lg font-black tracking-widest uppercase">ASAS 2026 • GENERATOR NOMOR BANGKU</h1>
             <p className="text-[10px] opacity-80 font-bold uppercase tracking-tight">Admin: {config.schoolName}</p>
           </div>
         </div>
@@ -501,7 +486,7 @@ export default function App() {
 
       {/* Footer - Hidden on Print */}
       <footer className="no-print py-6 border-t border-border-main bg-white text-center text-text-muted text-[10px] font-black uppercase tracking-[0.2em]">
-        SAT Label Management System &bull; &copy; 2026
+        ASAS Label Management System &bull; &copy; 2026
       </footer>
     </div>
   );
